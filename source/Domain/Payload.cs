@@ -10,7 +10,7 @@ namespace CampaignWebhook.Domain
     public class Payload
     {
         /// <summary>
-        /// id of the registered interaction (returned by the register interaction endpoint)
+        /// Id of the registered interaction (returned by the register interaction endpoint)
         /// </summary>
         public string Id { get; set; }
         /// <summary>
