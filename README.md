@@ -16,7 +16,8 @@ This is an illustrative example of **how to handle real-time events from OnYouâ€
 
 The solution, named `OnYouCampaign.sln`, is located in the `source` folder and is includes the `Webhook.csproj`.
 
-## Setup and Installation
+## Setup and Build
+To setup and build the sample component:
 
 1. Clone the repository:
 
@@ -38,10 +39,18 @@ The solution, named `OnYouCampaign.sln`, is located in the `source` folder and i
 
 ## Usage
 
-To start the function app locally, navigate to the project directory and run
+To start the function app locally:
+
+1. Navigate to build directory:
 
    ```shell
-   func start
+   cd source\bin\Debug\net6.0
+   ```
+
+2. Start the function:
+
+   ```shell
+   func start Webhook
    ```
 
 ## Contributing
