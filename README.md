@@ -22,7 +22,7 @@ To setup and build the sample component:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-repo/onyou-webhook-sample.git
+   git clone https://github.com/OnYouBR/onDemandMSWebhookSample.git
    ```
 
 2. Navigate to the solution directory:
