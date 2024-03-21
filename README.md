@@ -44,7 +44,7 @@ To start the function app locally:
 1. Navigate to build directory:
 
    ```shell
-   cd source\bin\Debug\net6.0
+   cd bin\Debug\net6.0
    ```
 
 2. Start the function:
