@@ -23,6 +23,7 @@ namespace CampaignWebhook.Domain
             if (payload.Event == Event.Select.Code || payload.Event == Event.Notify.Code)
                 return NotifyClient(payload);
 
+            // Below is considered the generation of voucher during the grant (check-in)
             if (payload.Event == Event.Grant.Code)
                 return GenerateVoucher(payload);
 
@@ -35,15 +36,10 @@ namespace CampaignWebhook.Domain
 
         private static string NotifyClient(Payload payload)
         {
-            //TODO Call your Whatsapp service here
+            //TODO Adjust your business logic accordingly
 
-            //TODO Remove console log
-            Console.WriteLine(" ");
-            Console.WriteLine($"****  WHATSAPP: {payload.Phone}" +
-                              "\n********************************************************************" +
-                              "\n" + payload.Notification +
-                              "\n********************************************************************");
-            Console.WriteLine(" ");
+            // Below is considered the notification via the company's WhatsApp for Business
+            WhatsApp.UseInsiderWAGateway.Send(payload.Phone, payload.Notification);
 
             return string.Empty;
         }

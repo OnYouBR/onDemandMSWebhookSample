@@ -63,7 +63,7 @@ namespace CampaignWebhook.Domain
 
             if ((Event == Domain.Event.Select.Code || Event == Domain.Event.Grant.Code) && 
                 (!Reward.HasValue || Reward.Value <= 0))
-                AddError("Select and grant events must have reward value greater than 0.");
+                AddError("Select and Grant events must have reward value greater than 0.");
 
             if (!Domain.Event.IsValid(Event))
                 AddError("Event is invalid.");
